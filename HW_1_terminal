@@ -1,0 +1,45 @@
+Д/З №1
+Часть 1 
+1.      Посмотреть где я -  pwd. 
+2.     Создать папку -  mkdir H_W. (
+3.     Зайти в папку –  cd H_W.
+4.      Создать 3 папки – mkdir qa1 qa2 qa3.
+5.     Зайти в любую из папок – cd qa1.
+6.     Создать 3 файла .txt, 2 файла.json – touch 001.txt 002.txt 003.txt 004.json 005.json
+7.     Создать 3 папки – mkdir 01 02 03.
+8.     Вывести список содержимого папки – ls -la.
+9.     Открыть любой .txt файл – cat 001.txt.
+10.  Добавить в открытый файл текст – cat >> 001.txt – ввести произвольный текст.
+11.  Сохранить текст и выйти – после ввода данных нажать Enter, для закрытия нажать ctrl+c.
+12.  Выйти из папки на уровень выше – cd ..
+13.  Переместить 2 любых файла в любую папку – mv qa1/{004.json,005.json} qa2, где qa1 и qa2 – имя каталога.
+14.  Скопировать любые 2 файла в любую папку – cp qa1/{001.txt,002.txt} qa3, где qa1 и qa3- имя каталога.
+15.  Найти файл по имени –  find . -depth -name 001.txt (./qa1/001.txt
+./qa3/001.txt)
+ 
+16.  Отображение содержимого в реальном времени  tail -f /Users/andreishkadun/vadim_ksendzov/group_29_free/H_W/qa1/001.txt
+17.  Вывести несколько первых строк из текстового файла.  head -5 /Users/andreishkadun/vadim_ksendzov/group_29_free/H_W/qa1/001.txt –  отображает первые 5 строк файла/
+18.  Вывести несколько последних строк из текстового файла.  tail -3 /Users/andreishkadun/vadim_ksendzov/group_29_free/H_W/qa1/001.txt – отображает последние 3 строки файла.
+19.  Просмотр большого тестового файла.  less /Users/andreishkadun/vadim_ksendzov/group_29_free/H_W/qa1/001.txt.
+20.  Вывести дату и время. Date.
+ 
+ 
+Дополнительные задания: 
+1.     Отправить запрос.  curl "http://162.55.220.72:5005/get_method?name=andrei&age=30"
+["andrei","30"] 
+ 
+2.     Написать скрипт.
+#!/bin/bash
+	#This is a comment
+	cd /Users/andreishkadun/vadim_ksendzov/group_29_free/
+	pwd
+	mkdir H_W
+	cd H_W
+	mkdir qa1 qa2 qa3
+	cd qa1
+	touch 001.txt 002.txt 003.txt 004.json 005.json 
+	mkdir 01 02 03
+	cd .. 
+	ls -la
+	mv qa1/{004.json, 005.json} qa2
+	chmod +x /Users/andreishkadun/script/script1.sh
